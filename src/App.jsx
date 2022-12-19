@@ -3,7 +3,6 @@ import "./App.css";
 
 function App() {
   const [img, setImg] = useState([]);
-  const [imgs, setImgs] = useState(null);
 
   useEffect(() => {
     fetch("https://api.imgflip.com/get_memes").then((response) =>
@@ -14,7 +13,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      // map thru
+      {/* // map thru memes  */}
       {img.map((imgs) => {
         return (
           <img
@@ -22,7 +21,6 @@ function App() {
             key={imgs.id}
             src={imgs.url}
             alt={imgs.name}
-            onClick={() => {}}
           />
         );
       })}
