@@ -15,6 +15,7 @@ function App() {
     <div style={{ textAlign: "center" }}>
       {/* // map thru memes  */}
       {img.map((imgs) => {
+        // imgs.id, url and name are the properties from the json object that is being extracted so I can see the memes
         return (
           <img
             style={{ width: 200 }}
