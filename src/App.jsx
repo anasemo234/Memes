@@ -7,6 +7,7 @@ function App() {
   useEffect(() => {
     fetch("https://api.imgflip.com/get_memes").then((response) =>
       // setting the state to the memes we get
+      // getting data in json format
       response.json().then((response) => setImg(response.data.memes))
     );
   }, []);
